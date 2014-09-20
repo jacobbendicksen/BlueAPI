@@ -1,9 +1,8 @@
-#!/usr/bin/python
 #####################################################
 #
 # A library for accessing the Blue Alliance API
 #
-# Author: Andrew Merrill and Jacob Bendicksen (Fall 2014)
+# Authors: Andrew Merrill and Jacob Bendicksen (Fall 2014)
 #
 ######################################################
 
