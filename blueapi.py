@@ -20,7 +20,7 @@ def sendAPIRequest(selector):
     api_base_url = '/api/v2/'
     full_url = 'http://' + api_server + api_base_url + selector
     headers = dict()
-    headers['X-TBA-App-Id'] = 'frc1540:apilib:v1'
+    headers['X-TBA-App-Id'] = 'frcyyyy:your_app:v1' #replace this with something that describes you/your team
     print 'URL:', full_url
     request = urllib2.Request(full_url, None, headers)
     connection = urllib2.urlopen(request)
@@ -118,5 +118,3 @@ def getDistrictEvents(districtArea, year):
 # returns rankings and event breakdowns for each team
 def getDistrictRankings(districtArea, year):
   return sendAPIRequest('district/' + str(districtArea) + '/' + str(year) + '/rankings')
-
-print getDistrictRankings('pnw', 2014)
