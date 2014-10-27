@@ -20,7 +20,7 @@ def sendAPIRequest(selector):
     full_url = 'http://' + api_server + api_base_url + selector
     headers = dict()
     headers['X-TBA-App-Id'] = 'frcyyyy:your_app:v1' #replace this with something that describes you/your team
-    print 'URL:', full_url
+    #print 'URL:', full_url
     request = urllib2.Request(full_url, None, headers)
     connection = urllib2.urlopen(request)
     code = connection.getcode()
